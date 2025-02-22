@@ -2,10 +2,21 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
   \***************************************************************************************************************/
 body {
-  background-color: red;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  background-color: white;
 }
 
-h1 h2 h3 h4 {
-  text-align: center;
+header {
+  width: 100%;
+  height: auto;
+}
+header .up_menu {
+  display: flex;
   margin: 0 auto;
+  max-width: 1570px;
+  height: 86px;
+  margin-top: 20px;
 }

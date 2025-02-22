@@ -1,15 +1,106 @@
-
+@font-face {
+    font-family: inter;
+    src: url(../../public/font/Inter.ttc);
+}
 body{
-    background-color: red;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: white;
 }
-
-h1, h2, h3{
-    text-align: center;
-}
-
-.h{
-    color: yellow;
-    font-size: 120px;
-    font-weight: bolder;
+.container{
+    max-width: 1570px;
     margin: 0 auto;
+    padding: 0;
 }
+
+header{
+   width: 100%;
+   height: auto;
+   .up_menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 20px;
+        .logo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            width: 372px;
+            .item_svg{
+                margin: 0;
+                padding: 0;
+            }
+            .item_title{
+                margin: 0;
+                padding: 0;
+                margin-left: 15px;
+            }
+
+        }
+        .menu{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 780px;
+            a{
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+                font-family: inter;
+                color: #294060;
+                font-weight: 500;
+                font-size: 18px;
+            }
+
+        }
+        .links_messangers{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 200px;
+        }
+    
+   } 
+}
+
+.view_banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-top: 74px;
+    .img_jpg{
+        margin: 0;
+        padding: 0;
+
+
+    }
+    .swiper{
+        margin: 0;
+        padding: 0;
+        width: 974px;
+        border-radius: 10px;
+        
+        h1{
+            position: absolute;
+            color: white;
+            font-family: inter;
+            font-size: 48px;
+            top: 45px;
+            left: 45px;
+            margin: 0;
+            padding: 0;
+        }
+        
+
+    }
+}
+
+
