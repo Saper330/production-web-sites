@@ -2,6 +2,21 @@
     font-family: inter;
     src: url(../../public/font/Inter.ttc);
 }
+@font-face {
+    font-family: inter-display-medium;
+    src: url(../../public/font/InterDisplay-Medium.woff2);
+}
+@font-face {
+    font-family: inter-display-regular;
+    src: url(../../public/font/InterDisplay-Regular.woff2);
+}
+@font-face {
+    font-family: inter-display-light;
+    src: url(../../public/font/InterDisplay-Light.woff2);
+}
+
+
+
 body{
     margin: 0;
     padding: 0;
@@ -53,7 +68,7 @@ header{
                 margin: 0;
                 padding: 0;
                 text-decoration: none;
-                font-family: inter;
+                font-family: inter-display-medium;
                 color: #294060;
                 font-weight: 500;
                 font-size: 18px;
@@ -92,7 +107,7 @@ header{
         h1{
             position: absolute;
             color: white;
-            font-family: inter;
+            font-family: inter-display-medium;
             font-size: 48px;
             top: 45px;
             left: 45px;
@@ -115,7 +130,7 @@ header{
 .contant_block_1{
     display: block;
     margin: 0;
-    padding: 54px 54px 33px 54px;
+    padding: 54px 54px 54px 54px;
     border: 2px solid #2A7465;
     border-radius: 30px;
     max-width: 100%;
@@ -139,7 +154,7 @@ header{
             p{
             margin: 0;
             padding: 0;
-            font-family: inter;
+            font-family: inter-display-regular;
             font-size: 24px;
             line-height: 28.8px;
             font-weight: 400;
@@ -168,14 +183,14 @@ header{
             margin-top: 50px;
             color:#294060;
             .title{
-                font-family: inter;
+                font-family: inter-display-medium;
                 font-size: 24px;
                 line-height: 28.8px;
                 font-weight: 600;
                 margin: 30px 0 0 20px;
             }
             .text{
-                font-family: inter;
+                font-family: inter-display-regular;
                 font-size: 18px;
                 font-weight: 400;
                 line-height: 21.6px;
@@ -197,7 +212,7 @@ header{
     .sub_3{
         display: block;
         .title{
-            font-family: inter;
+            font-family: inter-display-medium;
             font-size: 32px;
             font-weight: 500;
             color: #294060;
@@ -210,7 +225,7 @@ header{
     
 
 }
-.contant_block_3{
+.contant_block_2{
     .title{
         font-family: inter;
         font-size: 56px;
@@ -229,13 +244,15 @@ header{
             flex-direction: row;
             align-items: center;
             width: 780px;
+            height: 80px;
             color: #294060;
+    
             p{
                 font-family: inter;
                 font-size: 24px;
                 font-weight: 500;
                 line-height: 28,8px;
-                margin-left: 15px;
+                margin: 0 0 0 15px;
                 
             }
             
@@ -246,5 +263,158 @@ header{
         }
     }
 }
+.application_form_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 765px;
+    border: 2px solid #2A7465;
+    border-radius: 30px;
+    margin-top: 50px;
+    .forms_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 800px;
+        form{
+            max-width: 700px;
+            margin: 0;
+            padding: 0;
+            margin-top: 80px;
+            label{
+                font-family: inter-display-medium;
+                font-size: 42px;
+                font-weight: 500;
+                color: #294060;
+            }
+            .label_input{
+                position: relative;
+                width: 100%;
+                height: 82px;
+                margin-top: 40px;
+                background-color: #F8F9FE;
+                border-radius: 10px;
+                input{
+                    outline: 0 !important;
+                    background-color: #F8F9FE;
+                    border-radius: 10px;
+                    height: 82px;
+                    border: none;
+                    font-size: 24px;
+                }
+                #name{
+                    width: 600px;
+                    height: 82px;
+                    float: right;
+                }
+                #fone{
+                    width: 100%;
+                }
+                label{
+                    position: absolute;
+                    top: 27px;
+                    font-size: 24px;
+                    left: 20px;
+                    span{
+                        position: absolute;
+                        top: 0;
+                        color: #FF3131;
+                        // left: 20px;
+                    }
+                } 
+            }
+            
+            
+            
+            
+            
+                
+        }
+            
+
+    }
+
+    .image{
+        margin-right: -2px;
+    }
+}
+.checker{
+    margin: 0 0 9px 0;
+    cursor: pointer;
+    input{  
+        appearance: none;
+        display: none;
+    }
+    span{
+        display: flex;
+        align-items: center;
+        position: relative;
+        display: block;
+        width: 35px;
+        height: 35px;
+        border: 2px solid #E8E8E8; 
+        border-radius: 5px;
+        .indicator{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 28px;
+            height: 28px;
+            
+            background: url("/public/img/Vector\ \(1\).svg") no-repeat;
+            background-size: cover;
+            transform: scale(0.9);
+            transition: 0.5s;
+            
+        
+        }
+        .indicator{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 28px;
+            height: 28px;
+            
+            background: url("/public/img/Vector\ \(1\).svg") no-repeat;
+            background-size: cover;
+            transform: scale(0.9);
+            transition: 0.5s;
+            
+        
+        }
+        .indicator::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 28px;
+            height: 28px;
+            transform: translate(-50%, -50%);
+            background: url("/public/img/Vector (1).svg") no-repeat;
+            background-size: cover;
+            
+        
+        }
+        
+    }
+    input:checked ~ .indicator{
+        // background: url("/public/img/Vector (1).svg") no-repeat;
+        // background-size: cover;
+        background-color: #FF3131;
+    }
+    input:checked ~ .indicator::before{
+        // background: url("/public/img/Vector (1).svg") no-repeat;
+        // background-size: cover;
+        background-color: #0d31e0;
+    
+    }
+ 
+}
+
+
+
+
+
 
 
